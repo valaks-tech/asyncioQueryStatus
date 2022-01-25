@@ -53,7 +53,8 @@ Assumptions/Known limitations:
 4.	Tool is not going to handle any rate limiting aspect for how many requests being sent.
 5.	Tool is not tested with huge number of requests (>100k) mainly how it works if all data loaded directly into pandas DataFrame.
 
-Some test outputs:
+# Some test outputs:
+```
 C:\Users\shail\Documents\TwitterQueryStatus> python3 .\main.py
 application,version,Aggregated Success Rate
 WebApp1,1.0,91.03
@@ -105,6 +106,7 @@ WebApp1,1.0,91.06
 WebApp1,2.0,90.5
 WebApp2,1.0,91.71
 WebApp2,2.0,90.04
+```
 
 Finished building report in 4.364496946334839 seconds for 1000 hosts
 (env) PS C:\Users\shail\Documents\TwitterQueryStatus>
