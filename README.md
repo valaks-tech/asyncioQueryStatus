@@ -106,7 +106,7 @@ WebApp1,1.0,91.06
 WebApp1,2.0,90.5
 WebApp2,1.0,91.71
 WebApp2,2.0,90.04
-```
 
 Finished building report in 4.364496946334839 seconds for 1000 hosts
 (env) PS C:\Users\shail\Documents\TwitterQueryStatus>
+```
