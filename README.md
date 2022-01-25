@@ -1,4 +1,4 @@
-# TwitterQueryStatus
+# TwitterQueryStatus  [ **** PRIVATE REPOSITORY / NEVER BE DISTRIBUTED OR SHARED WITH PUBLIC ****]
 ### Status page query for thousands of servers and build report 
 
 Create a tool that will query the ‘status’ page on 1000 fictitious servers and create a report based on data within the status pages.
