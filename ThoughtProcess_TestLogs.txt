@@ -7,7 +7,7 @@ grequests library in python would work , it took about ~4.2 seconds to do 1k req
 Going to choose python to write this tool  and structure of the project will be as below -
 
 Project structure of the tool:
-/TwitterQueryStatus
+/asyncioQueryStatus
     |-- main.py
     |-- config.py
     |-- requirements.txt
