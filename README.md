@@ -1,12 +1,11 @@
-# TwitterQueryStatus  [ **** PRIVATE REPOSITORY / NEVER BE DISTRIBUTED OR SHARED WITH PUBLIC ****]
+# asyncioQueryStatus 
 ### Status page query for thousands of servers and build report 
 
-Create a tool that will query the ‘status’ page on 1000 fictitious servers and create a report based on data within the status pages.
+Create a tool that will query the ‘status’ page on 1000 servers and create a report based on data within the status pages.
 
 Each server has a ‘status’ endpoint that returns JSON data with the service information, a count of requests, and a success count. The tool reports the aggregated success rate (total success / total requests) broken down by application and version for all of the servers.
 
-Sample endpoint: 
-http://storage.googleapis.com/revsreinterview/hosts/host578/status 
+Sample endpoint:  
 (you can find other endpoints at /hosts/host0/status, /hosts/host1/status, …, /hosts/host999/status):
 
 {
@@ -35,7 +34,7 @@ grequests library in python would work , it took about ~4.2 seconds to do 1k req
 Going to choose python to write this tool  and structure of the project will be as below -
 
 Project structure of the tool:
-/TwitterQueryStatus
+/asyncioQueryStatus
     |-- main.py
     |-- config.py
     |-- requirements.txt
@@ -65,7 +64,7 @@ WebApp2,2.0,89.88
 Finished building report in 2.7296998500823975 seconds for 1000 hosts
 PS C:\Users\shail\Documents\TwitterQueryStatus>
 
-PS C:\Users\shail\Documents\TwitterQueryStatus> python3 .\main.py
+PS C:\Users\shail\Documents\asyncioQueryStatus> python3 .\main.py
 application,version,Aggregated Success Rate
 WebApp1,1.0,91.11
 WebApp1,2.0,90.46
@@ -73,34 +72,10 @@ WebApp2,1.0,91.74
 WebApp2,2.0,90.23
 
 Finished building report in 23.257724046707153 seconds for 10000 hosts
-PS C:\Users\shail\Documents\TwitterQueryStatus>
+PS C:\Users\shail\Documents\asyncioQueryStatus>
 
 
-(env) PS C:\Users\shail\Documents\TwitterQueryStatus> py -m pip list
-Package            Version
------------------- -------
-aiofiles           0.8.0
-aiohttp            3.8.1
-aiosignal          1.2.0
-async-timeout      4.0.2
-attrs              21.4.0
-charset-normalizer 2.0.10
-frozenlist         1.3.0
-idna               3.3
-multidict          6.0.2
-numpy              1.22.1
-pandas             1.4.0
-pip                21.2.4
-python-dateutil    2.8.2
-pytz               2021.3
-setuptools         58.1.0
-six                1.16.0
-yarl               1.7.2
-WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
-You should consider upgrading via the 'C:\Users\shail\Documents\TwitterQueryStatus\env\Scripts\python.exe -m pip install --upgrade pip' command.
-(env) PS C:\Users\shail\Documents\TwitterQueryStatus>
-
-(env) PS C:\Users\shail\Documents\TwitterQueryStatus> python .\main.py
+(env) PS C:\Users\shail\Documents\asyncioQueryStatus> python .\main.py
 application,version,Aggregated Success Rate
 WebApp1,1.0,91.06
 WebApp1,2.0,90.5
@@ -108,5 +83,5 @@ WebApp2,1.0,91.71
 WebApp2,2.0,90.04
 
 Finished building report in 4.364496946334839 seconds for 1000 hosts
-(env) PS C:\Users\shail\Documents\TwitterQueryStatus>
+(env) PS C:\Users\shail\Documents\asyncioQueryStatus>
 ```
